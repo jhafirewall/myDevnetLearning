@@ -1,0 +1,18 @@
+Enable ssh
+
+conf t
+no logging console
+username cisco privilege 15 secret cisco
+
+interface GigabitEthernet1
+ ip address 10.12.67.3 255.255.255.0
+no shut
+
+ip domain name abc.com
+
+line vty 0 4
+transport input all
+login local
+exit
+crypto key generate rsa 
+1024
