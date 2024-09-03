@@ -1,4 +1,6 @@
-Enable ssh
+!Enable ssh
+
+! use shift+insert to paste on browser
 
 conf t
 no logging console
